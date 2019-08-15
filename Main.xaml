@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Config" Type="InArgument(x:String)" />
   </x:Members>
@@ -63,168 +63,132 @@
         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
-        <av:PointCollection x:Key="ConnectorLocation">300,77.1666666666667 300,107.166666666667 310,107.166666666667 310,148.333333333333</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.1666666666667 300,107.166666666667 290,107.166666666667 290,184.02</av:PointCollection>
         <x:Double x:Key="Height">1517.7933464210973</x:Double>
         <x:Double x:Key="Width">1135.1482248637717</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID3</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID4">
+    <FlowStep>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">202,148.333333333333</av:Point>
-          <av:Size x:Key="ShapeSize">216,223.333333333333</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">310,371.666666666667 310,401.666666666667 270,401.666666666667 270,454</av:PointCollection>
+          <av:Point x:Key="ShapeLocation">162,454</av:Point>
+          <av:Size x:Key="ShapeSize">216,52</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">270,506 270,536 260,536 260,564</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Precondition: Have the link ready for the google drive,&#xA;Must be logged into google&#xA;MUST close all IE or Adobe processes&#xA;&#xA;Post Condition: Needs to create list that is consumable with the movie names" DisplayName="Process Documents" sap:VirtualizedContainerService.HintSize="368,1186.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
-        <Sequence.Variables>
-          <Variable x:TypeArguments="x:String" Default="https://tinyurl.com/y8zq8rum" Name="googleDrive_Link" />
-          <Variable x:TypeArguments="s:String[]" Name="movieStringArray1" />
-          <Variable x:TypeArguments="s:String[]" Name="movieStringArray2" />
-          <Variable x:TypeArguments="s:String[]" Name="combinedStringArray" />
-        </Sequence.Variables>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Get First Document Data" sap:VirtualizedContainerService.HintSize="330,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ParseDocuments\Download_files.xaml">
-          <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="x:String" x:Key="in_MovieListTitle">Movie List 1.pdf</InArgument>
-          </ui:InvokeWorkflowFile.Arguments>
-        </ui:InvokeWorkflowFile>
-        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Create String Array Form First Doc" sap:VirtualizedContainerService.HintSize="330,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ParseDocuments\ReadFrom_Adobe.xaml">
-          <ui:InvokeWorkflowFile.Arguments>
-            <OutArgument x:TypeArguments="s:String[]" x:Key="out_MovieStringArray">[movieStringArray1]</OutArgument>
-          </ui:InvokeWorkflowFile.Arguments>
-        </ui:InvokeWorkflowFile>
-        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Get Second Document Data" sap:VirtualizedContainerService.HintSize="330,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="ParseDocuments\Download_files.xaml">
-          <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="x:String" x:Key="in_MovieListTitle">Movie List 2.PDF</InArgument>
-          </ui:InvokeWorkflowFile.Arguments>
-        </ui:InvokeWorkflowFile>
-        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Create String Array From Sec Doc" sap:VirtualizedContainerService.HintSize="330,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="ParseDocuments\ReadFrom_Adobe.xaml">
-          <ui:InvokeWorkflowFile.Arguments>
-            <OutArgument x:TypeArguments="s:String[]" x:Key="out_MovieStringArray">[movieStringArray2]</OutArgument>
-          </ui:InvokeWorkflowFile.Arguments>
-        </ui:InvokeWorkflowFile>
-        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke CombineStringArrays workflow" sap:VirtualizedContainerService.HintSize="330,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="ParseDocuments\CombineStringArrays.xaml">
-          <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="s:String[]" x:Key="in_MovieString1">[movieStringArray1]</InArgument>
-            <InArgument x:TypeArguments="s:String[]" x:Key="in_MovieString2">[movieStringArray2]</InArgument>
-            <OutArgument x:TypeArguments="s:String[]" x:Key="out_CombinedMovieString">[combinedStringArray]</OutArgument>
-          </ui:InvokeWorkflowFile.Arguments>
-        </ui:InvokeWorkflowFile>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;testing out combined string&quot;]" />
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;this is combined string: &quot; + combinedStringArray.ToString]" />
-        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke FormatVideoDetailString workflow" sap:VirtualizedContainerService.HintSize="330,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="ParseDocuments/FormatVideoDetailString.xaml">
-          <ui:InvokeWorkflowFile.Arguments>
-            <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_MovieDatatable" />
-            <InArgument x:TypeArguments="s:String[]" x:Key="in_MovieStringArray">[combinedStringArray]</InArgument>
-          </ui:InvokeWorkflowFile.Arguments>
-        </ui:InvokeWorkflowFile>
-      </Sequence>
+      <ui:CommentOut sap:VirtualizedContainerService.HintSize="216,52" sap2010:WorkflowViewState.IdRef="CommentOut_20">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_34">
+            <Sequence DisplayName="Get URLs From Youtube" sap:VirtualizedContainerService.HintSize="216,68" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="ui:QueueItem" Name="retrievedTransactionItem" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;retrieving transactoin&quot;]" />
+              <ui:GetQueueItem ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Transaction Item" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="GetQueueItem_1" QueueType="Movies" TransactionItem="[retrievedTransactionItem]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;got our transaction item: &quot; + retrievedTransactionItem.SpecificContent(&quot;MovieName&quot;).ToString]" />
+              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GetMovieNames workflow" sap:VirtualizedContainerService.HintSize="330,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="ExcelOperations\GetMovieNames.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_MovieName">[retrievedTransactionItem.SpecificContent("MovieName").ToString]</InArgument>
+                  <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_MovieDatatable">[movieInformationDT]</OutArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </Sequence>
+          </Sequence>
+        </ui:CommentOut.Body>
+      </ui:CommentOut>
       <FlowStep.Next>
         <FlowStep x:Name="__ReferenceID0">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">162,454</av:Point>
-              <av:Size x:Key="ShapeSize">216,68</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">270,522 270,552 260,552 260,564</av:PointCollection>
+              <av:Point x:Key="ShapeLocation">152,564</av:Point>
+              <av:Size x:Key="ShapeSize">216,52</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">260,616 260,714</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Get URLs From Youtube" sap:VirtualizedContainerService.HintSize="216,68" sap2010:WorkflowViewState.IdRef="Sequence_7">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="ui:QueueItem" Name="retrievedTransactionItem" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;retrieving transactoin&quot;]" />
-            <ui:GetQueueItem ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Transaction Item" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="GetQueueItem_1" QueueType="Movies" TransactionItem="[retrievedTransactionItem]" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;got our transaction item: &quot; + retrievedTransactionItem.SpecificContent(&quot;MovieName&quot;).ToString]" />
-            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GetMovieNames workflow" sap:VirtualizedContainerService.HintSize="330,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="ExcelOperations\GetMovieNames.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_MovieName">[retrievedTransactionItem.SpecificContent("MovieName").ToString]</InArgument>
-                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_MovieDatatable">[movieInformationDT]</OutArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-            </ui:InvokeWorkflowFile>
-          </Sequence>
+          <ui:CommentOut sap:VirtualizedContainerService.HintSize="216,52" sap2010:WorkflowViewState.IdRef="CommentOut_21">
+            <ui:CommentOut.Body>
+              <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                <Sequence DisplayName="Store Titles And URLS in Excel &amp; Queue" sap:VirtualizedContainerService.HintSize="216,68" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke AddMovieNamesURLsToExcel workflow" sap:VirtualizedContainerService.HintSize="330,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="ExcelOperations/WriteToExcel.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="sd:DataTable" x:Key="in_MovieDatatable">[movieInformationDT]</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </Sequence>
+            </ui:CommentOut.Body>
+          </ui:CommentOut>
           <FlowStep.Next>
             <FlowStep x:Name="__ReferenceID1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">152,564</av:Point>
-                  <av:Size x:Key="ShapeSize">216,68</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">260,632 260,714</av:PointCollection>
+                  <av:Point x:Key="ShapeLocation">152,714</av:Point>
+                  <av:Size x:Key="ShapeSize">216,52</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">260,766 260,796 230,796 230,1106</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Store Titles And URLS in Excel &amp; Queue" sap:VirtualizedContainerService.HintSize="216,68" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke AddMovieNamesURLsToExcel workflow" sap:VirtualizedContainerService.HintSize="330,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="ExcelOperations/WriteToExcel.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="sd:DataTable" x:Key="in_MovieDatatable">[movieInformationDT]</InArgument>
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
-              </Sequence>
+              <ui:CommentOut sap:VirtualizedContainerService.HintSize="216,52" sap2010:WorkflowViewState.IdRef="CommentOut_18">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PullDatatableFromExcel workflow" sap:VirtualizedContainerService.HintSize="216,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="ExcelOperations\PullDatatableFromExcel.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_MovieDataTable">[movieInformationDT]</OutArgument>
+                      </ui:InvokeWorkflowFile.Arguments>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:InvokeWorkflowFile>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
               <FlowStep.Next>
                 <FlowStep x:Name="__ReferenceID2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">152,714</av:Point>
+                      <av:Point x:Key="ShapeLocation">122,1106</av:Point>
                       <av:Size x:Key="ShapeSize">216,52</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">260,766 260,796 230,796 230,1106</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PullDatatableFromExcel workflow" sap:VirtualizedContainerService.HintSize="216,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="ExcelOperations\PullDatatableFromExcel.xaml">
-                    <ui:InvokeWorkflowFile.Arguments>
-                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_MovieDataTable">[movieInformationDT]</OutArgument>
-                    </ui:InvokeWorkflowFile.Arguments>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:InvokeWorkflowFile>
-                  <FlowStep.Next>
-                    <FlowStep x:Name="__ReferenceID3">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">122,1106</av:Point>
-                          <av:Size x:Key="ShapeSize">216,68</av:Size>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Get Details Per Movie" sap:VirtualizedContainerService.HintSize="216,68" sap2010:WorkflowViewState.IdRef="Sequence_13">
-                        <Sequence.Variables>
-                          <Variable x:TypeArguments="ui:QueueItem" Name="trailerDetails" />
-                        </Sequence.Variables>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Pulling Trailer Name and URL From Queue...&quot;]" />
-                        <ui:GetQueueItem ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Transaction Item" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="GetQueueItem_2" QueueType="Trailers" TransactionItem="[trailerDetails]" />
-                        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GetVideoDetails workflow" sap:VirtualizedContainerService.HintSize="330,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="ScrapeData\GetVideoDetails.xaml">
-                          <ui:InvokeWorkflowFile.Arguments>
-                            <InArgument x:TypeArguments="x:String" x:Key="in_MovieName">[trailerDetails.SpecificContent("MovieName").ToString]</InArgument>
-                            <InArgument x:TypeArguments="x:String" x:Key="in_MovieURL">[trailerDetails.SpecificContent("URL").ToString]</InArgument>
-                            <InArgument x:TypeArguments="x:String" x:Key="in_MovieTrailerName">[trailerDetails.SpecificContent("TrailerName").ToString]</InArgument>
-                          </ui:InvokeWorkflowFile.Arguments>
-                        </ui:InvokeWorkflowFile>
+                  <ui:CommentOut sap:VirtualizedContainerService.HintSize="216,52" sap2010:WorkflowViewState.IdRef="CommentOut_19">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                        <Sequence DisplayName="Get Details Per Movie" sap:VirtualizedContainerService.HintSize="216,68" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="ui:QueueItem" Name="trailerDetails" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Pulling Trailer Name and URL From Queue...&quot;]" />
+                          <ui:GetQueueItem ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Transaction Item" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="GetQueueItem_2" QueueType="Trailers" TransactionItem="[trailerDetails]" />
+                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GetVideoDetails workflow" sap:VirtualizedContainerService.HintSize="330,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="ScrapeData\GetVideoDetails.xaml">
+                            <ui:InvokeWorkflowFile.Arguments>
+                              <InArgument x:TypeArguments="x:String" x:Key="in_MovieName">[trailerDetails.SpecificContent("MovieName").ToString]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="in_MovieURL">[trailerDetails.SpecificContent("URL").ToString]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="in_MovieTrailerName">[trailerDetails.SpecificContent("TrailerName").ToString]</InArgument>
+                            </ui:InvokeWorkflowFile.Arguments>
+                          </ui:InvokeWorkflowFile>
+                        </Sequence>
                       </Sequence>
-                    </FlowStep>
-                  </FlowStep.Next>
+                    </ui:CommentOut.Body>
+                  </ui:CommentOut>
                 </FlowStep>
               </FlowStep.Next>
             </FlowStep>
@@ -235,7 +199,6 @@
     <x:Reference>__ReferenceID0</x:Reference>
     <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
-    <x:Reference>__ReferenceID3</x:Reference>
     <FlowStep>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -261,6 +224,24 @@
           </Sequence>
         </ui:CommentOut.Body>
       </ui:CommentOut>
+    </FlowStep>
+    <FlowStep x:Name="__ReferenceID3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">182,184.02</av:Point>
+          <av:Size x:Key="ShapeSize">216,52</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ProcessDocuments workflow" sap:VirtualizedContainerService.HintSize="216,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="ProcessDocuments.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
     </FlowStep>
   </Flowchart>
 </Activity>
