@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>636.666666666667,4086.66666666667</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>674.666666666667,4240.66666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>YoutubeOps_ScrapeData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
@@ -59,7 +59,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="YoutubeOps_ScrapeData" sap:VirtualizedContainerService.HintSize="596.666666666667,4006.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="YoutubeOps_ScrapeData" sap:VirtualizedContainerService.HintSize="634.666666666667,4160.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="detailsDatatable" />
       <Variable x:TypeArguments="x:String" Name="videoName" />
@@ -75,15 +75,15 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="558.666666666667,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Starting Data Scrape...&quot;]" />
-    <ui:BuildDataTable DataTable="[detailsDatatable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="558.666666666667,58.6666666666667" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Movie_x0020_Name&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Trailer_x0020_Name&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;URL&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Views&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Likes&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Dislikes&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Publisher&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Published_x0020_Date&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[in_MovieDatabase]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="558.666666666667,3386" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="596.666666666667,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Starting Data Scrape...&quot;]" />
+    <ui:BuildDataTable DataTable="[detailsDatatable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="596.666666666667,58.6666666666667" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Movie_x0020_Name&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Trailer_x0020_Name&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;URL&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Views&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Likes&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Dislikes&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Publisher&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Published_x0020_Date&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[in_MovieDatabase]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="596.666666666667,3540" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="512,3234.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence sap:VirtualizedContainerService.HintSize="550,3388.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="movieName" />
             </Sequence.Variables>
@@ -92,7 +92,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="474,3080.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,3234.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="browserToAttachTo" />
               </Sequence.Variables>
@@ -101,7 +101,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="436,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign sap:VirtualizedContainerService.HintSize="474,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[movieName]</OutArgument>
                 </Assign.To>
@@ -109,8 +109,8 @@
                   <InArgument x:TypeArguments="x:String">[row(0).ToString]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;this is the movie name we pulled from the list: &quot; + movieName]" />
-              <Assign sap:VirtualizedContainerService.HintSize="436,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="474,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;this is the movie name we pulled from the list: &quot; + movieName]" />
+              <Assign sap:VirtualizedContainerService.HintSize="474,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[browserToAttachTo]</OutArgument>
                 </Assign.To>
@@ -118,131 +118,139 @@
                   <InArgument x:TypeArguments="x:String">["&lt;html title='"+movieName+" Official Trailer - YouTube' /&gt;"]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;this is the browser we are attaching to: &quot; + browserToAttachTo]" />
-              <ui:OpenBrowser UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Open Browser" Hidden="False" sap:VirtualizedContainerService.HintSize="436,2519.33333333333" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="False" Url="[&quot;youtube.com&quot; + row(2).ToString]">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="474,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;this is the browser we are attaching to: &quot; + browserToAttachTo]" />
+              <ui:OpenBrowser UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Open Browser" Hidden="False" sap:VirtualizedContainerService.HintSize="474,2673.33333333333" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="False" Url="[&quot;youtube.com&quot; + row(2).ToString]">
                 <ui:OpenBrowser.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence sap:VirtualizedContainerService.HintSize="406,2420.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence sap:VirtualizedContainerService.HintSize="444,2574.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_9">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,2328.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
-                        <Sequence.Variables>
-                          <Variable x:TypeArguments="s:String[]" Name="numberLikesArray" />
-                          <Variable x:TypeArguments="s:String[]" Name="viewNumberArray" />
-                        </Sequence.Variables>
+                      <Sequence sap:VirtualizedContainerService.HintSize="406,2420.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;We are getting the details now&quot;]" />
-                        <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                        <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Video Name" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_7">
-                          <ui:GetValue.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="984541ac49381bfa2208c1d12afd0389" Selector="&lt;html title='* - YouTube' /&gt;&lt;webctrl id='eow-title' tag='SPAN' /&gt;" WaitForReady="INTERACTIVE" />
-                          </ui:GetValue.Target>
-                          <ui:GetValue.Value>
-                            <OutArgument x:TypeArguments="x:String">[videoName]</OutArgument>
-                          </ui:GetValue.Value>
-                        </ui:GetValue>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Name of video: &quot; + videoName]" />
-                        <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Views" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_8">
-                          <ui:GetValue.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="b2d793a054cd520b2018fdec8159163e" Selector="&lt;html title='* - YouTube' /&gt;&lt;webctrl omit:aaname='802,510 views' parentid='watch7-views-info' tag='DIV' /&gt;" WaitForReady="INTERACTIVE" />
-                          </ui:GetValue.Target>
-                          <ui:GetValue.Value>
-                            <OutArgument x:TypeArguments="x:String">[viewNumber]</OutArgument>
-                          </ui:GetValue.Value>
-                        </ui:GetValue>
-                        <Assign sap:VirtualizedContainerService.HintSize="330,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="s:String[]">[viewNumberArray]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="s:String[]">[viewNumber.Split(" "c)]</InArgument>
-                          </Assign.Value>
-                        </Assign>
-                        <Assign sap:VirtualizedContainerService.HintSize="330,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_7">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">[viewNumber]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">[viewNumberArray(0)]</InArgument>
-                          </Assign.Value>
-                        </Assign>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Views on Video: &quot; + viewNumber]" />
-                        <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Likes" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_9">
-                          <ui:GetValue.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="e324eb31da5b623a3f5d11184be2259e" Selector="&lt;html title='* - YouTube' /&gt;&lt;webctrl parentid='watch8-sentiment-actions' tag='SPAN' /&gt;" WaitForReady="INTERACTIVE" />
-                          </ui:GetValue.Target>
-                          <ui:GetValue.Value>
-                            <OutArgument x:TypeArguments="x:String">[numberLikes]</OutArgument>
-                          </ui:GetValue.Value>
-                        </ui:GetValue>
-                        <Assign sap:VirtualizedContainerService.HintSize="330,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="s:String[]">[numberLikesArray]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="s:String[]">[numberLikes.Split(" "c)]</InArgument>
-                          </Assign.Value>
-                        </Assign>
-                        <Assign sap:VirtualizedContainerService.HintSize="330,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">[numberLikes]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">[numberLikesArray(0)]</InArgument>
-                          </Assign.Value>
-                        </Assign>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Likes on Video: &quot; + numberLikes]" />
-                        <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get DisLikes" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_10">
-                          <ui:GetValue.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="cdcef1d77fe740a4f517bb2d72c64e0d" Selector="&lt;html title='* - YouTube' /&gt;&lt;webctrl aaname='dislike this video along with * other people' idx='1' parentid='watch8-sentiment-actions' tag='BUTTON' type='button' /&gt;" WaitForReady="INTERACTIVE" />
-                          </ui:GetValue.Target>
-                          <ui:GetValue.Value>
-                            <OutArgument x:TypeArguments="x:String">[numberDislikes]</OutArgument>
-                          </ui:GetValue.Value>
-                        </ui:GetValue>
-                        <ui:LogMessage DisplayName="Log Dislikes" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[&quot;DisLikes on Video: &quot; + numberDislikes]" />
-                        <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Publisher" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_11">
-                          <ui:GetValue.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="403a51fa1ff4356c553a5db4715ac88e" Selector="&lt;html title='* - YouTube' /&gt;&lt;webctrl parentid='watch7-user-header' tag='A' /&gt;" WaitForReady="INTERACTIVE" />
-                          </ui:GetValue.Target>
-                          <ui:GetValue.Value>
-                            <OutArgument x:TypeArguments="x:String">[publisher]</OutArgument>
-                          </ui:GetValue.Value>
-                        </ui:GetValue>
-                        <ui:LogMessage DisplayName="Log Publisher" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[&quot;Publisher of Video: &quot; + publisher]" />
-                        <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Publish Date" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_12">
-                          <ui:GetValue.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="7aaa63d19587df1c46359a1a8d9d6387" Selector="&lt;html title='* - YouTube' /&gt;&lt;webctrl parentid='watch-uploader-info' tag='STRONG' /&gt;" WaitForReady="INTERACTIVE" />
-                          </ui:GetValue.Target>
-                          <ui:GetValue.Value>
-                            <OutArgument x:TypeArguments="x:String">[publishedDate]</OutArgument>
-                          </ui:GetValue.Value>
-                        </ui:GetValue>
-                        <ui:LogMessage DisplayName="Log Dislikes" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;DisLikes on Video: &quot; + publishedDate]" />
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,2328.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="s:String[]" Name="numberLikesArray" />
+                            <Variable x:TypeArguments="s:String[]" Name="viewNumberArray" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;We are getting the details now&quot;]" />
+                          <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Video Name" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_7">
+                            <ui:GetValue.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="984541ac49381bfa2208c1d12afd0389" Selector="&lt;html title='* - YouTube' /&gt;&lt;webctrl id='eow-title' tag='SPAN' /&gt;" WaitForReady="INTERACTIVE" />
+                            </ui:GetValue.Target>
+                            <ui:GetValue.Value>
+                              <OutArgument x:TypeArguments="x:String">[videoName]</OutArgument>
+                            </ui:GetValue.Value>
+                          </ui:GetValue>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Name of video: &quot; + videoName]" />
+                          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Views" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_8">
+                            <ui:GetValue.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="b2d793a054cd520b2018fdec8159163e" Selector="&lt;html title='* - YouTube' /&gt;&lt;webctrl omit:aaname='802,510 views' parentid='watch7-views-info' tag='DIV' /&gt;" WaitForReady="INTERACTIVE" />
+                            </ui:GetValue.Target>
+                            <ui:GetValue.Value>
+                              <OutArgument x:TypeArguments="x:String">[viewNumber]</OutArgument>
+                            </ui:GetValue.Value>
+                          </ui:GetValue>
+                          <Assign sap:VirtualizedContainerService.HintSize="330,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="s:String[]">[viewNumberArray]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="s:String[]">[viewNumber.Split(" "c)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="330,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_7">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[viewNumber]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[viewNumberArray(0)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Views on Video: &quot; + viewNumber]" />
+                          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Likes" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_9">
+                            <ui:GetValue.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="e324eb31da5b623a3f5d11184be2259e" Selector="&lt;html title='* - YouTube' /&gt;&lt;webctrl parentid='watch8-sentiment-actions' tag='SPAN' /&gt;" WaitForReady="INTERACTIVE" />
+                            </ui:GetValue.Target>
+                            <ui:GetValue.Value>
+                              <OutArgument x:TypeArguments="x:String">[numberLikes]</OutArgument>
+                            </ui:GetValue.Value>
+                          </ui:GetValue>
+                          <Assign sap:VirtualizedContainerService.HintSize="330,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="s:String[]">[numberLikesArray]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="s:String[]">[numberLikes.Split(" "c)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="330,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[numberLikes]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[numberLikesArray(0)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Likes on Video: &quot; + numberLikes]" />
+                          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get DisLikes" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_10">
+                            <ui:GetValue.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="cdcef1d77fe740a4f517bb2d72c64e0d" Selector="&lt;html title='* - YouTube' /&gt;&lt;webctrl aaname='dislike this video along with * other people' idx='1' parentid='watch8-sentiment-actions' tag='BUTTON' type='button' /&gt;" WaitForReady="INTERACTIVE" />
+                            </ui:GetValue.Target>
+                            <ui:GetValue.Value>
+                              <OutArgument x:TypeArguments="x:String">[numberDislikes]</OutArgument>
+                            </ui:GetValue.Value>
+                          </ui:GetValue>
+                          <ui:LogMessage DisplayName="Log Dislikes" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[&quot;DisLikes on Video: &quot; + numberDislikes]" />
+                          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Publisher" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_11">
+                            <ui:GetValue.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="403a51fa1ff4356c553a5db4715ac88e" Selector="&lt;html title='* - YouTube' /&gt;&lt;webctrl id='watch7-user-header' parentid='watch-header' tag='DIV' class=' spf-link ' /&gt;&lt;webctrl parentid='watch7-user-header' tag='DIV' /&gt;" WaitForReady="INTERACTIVE" />
+                            </ui:GetValue.Target>
+                            <ui:GetValue.Value>
+                              <OutArgument x:TypeArguments="x:String">[publisher]</OutArgument>
+                            </ui:GetValue.Value>
+                          </ui:GetValue>
+                          <ui:LogMessage DisplayName="Log Publisher" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[&quot;Publisher of Video: &quot; + publisher]" />
+                          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Publish Date" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="GetValue_12">
+                            <ui:GetValue.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="7aaa63d19587df1c46359a1a8d9d6387" Selector="&lt;html title='* - YouTube' /&gt;&lt;webctrl parentid='watch-uploader-info' tag='STRONG' /&gt;" WaitForReady="INTERACTIVE" />
+                            </ui:GetValue.Target>
+                            <ui:GetValue.Value>
+                              <OutArgument x:TypeArguments="x:String">[publishedDate]</OutArgument>
+                            </ui:GetValue.Value>
+                          </ui:GetValue>
+                          <ui:LogMessage DisplayName="Log Dislikes" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;DisLikes on Video: &quot; + publishedDate]" />
+                        </Sequence>
                       </Sequence>
+                      <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="406,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
                     </Sequence>
                   </ActivityAction>
                 </ui:OpenBrowser.Body>
               </ui:OpenBrowser>
             </Sequence>
-            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{row(0),row(1),row(2), viewNumber, numberLikes, numberDislikes, publisher, publishedDate }]" DataTable="[detailsDatatable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="474,22" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{row(0),row(1),row(2), viewNumber, numberLikes, numberDislikes, publisher, publishedDate }]" DataTable="[detailsDatatable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="512,22" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>
     </ui:ForEachRow>
-    <ui:OutputDataTable DataTable="[detailsDatatable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="558.666666666667,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[outputDTString]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="558.666666666667,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info" Message="[outputDTString]" />
-    <Assign sap:VirtualizedContainerService.HintSize="558.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+    <ui:OutputDataTable DataTable="[detailsDatatable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="596.666666666667,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[outputDTString]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="596.666666666667,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info" Message="[outputDTString]" />
+    <Assign sap:VirtualizedContainerService.HintSize="596.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">[out_YoutubeData]</OutArgument>
       </Assign.To>

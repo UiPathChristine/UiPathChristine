@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>840.666666666667,1226</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1205.33333333333,1634</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
@@ -55,7 +55,7 @@
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart sap:VirtualizedContainerService.HintSize="800.666666666667,1146" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart sap:VirtualizedContainerService.HintSize="1165.33333333333,1554" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="movieInformationDT" />
       <Variable x:TypeArguments="x:String" Name="dtString" />
@@ -66,8 +66,8 @@
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">300,77.1666666666667 300,115.333333333333</av:PointCollection>
-        <x:Double x:Key="Height">1109.9589687590931</x:Double>
-        <x:Double x:Key="Width">770.99999999999977</x:Double>
+        <x:Double x:Key="Height">1517.7933464210973</x:Double>
+        <x:Double x:Key="Width">1135.1482248637717</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
@@ -77,14 +77,14 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">192,115.333333333333</av:Point>
-          <av:Size x:Key="ShapeSize">216,52.6666666666667</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,168 300,233.666666666667</av:PointCollection>
+          <av:Size x:Key="ShapeSize">216,52</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,167.333333333333 300,364</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:CommentOut sap:VirtualizedContainerService.HintSize="216,52.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut sap:VirtualizedContainerService.HintSize="216,52" sap2010:WorkflowViewState.IdRef="CommentOut_2">
         <ui:CommentOut.Body>
-          <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_12">
-            <Sequence sap2010:Annotation.AnnotationText="Precondition: Have the link ready for the google drive,&#xA;Must be logged into google&#xD;&#xA;MUST close all IE or Adobe processes&#xD;&#xA;&#xA;Post Condition: Needs to create list that is consumable with the movie names" DisplayName="Process Documents" sap:VirtualizedContainerService.HintSize="216,231.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <Sequence sap2010:Annotation.AnnotationText="Precondition: Have the link ready for the google drive,&#xA;Must be logged into google&#xD;&#xA;MUST close all IE or Adobe processes&#xD;&#xA;&#xA;Post Condition: Needs to create list that is consumable with the movie names" DisplayName="Process Documents" sap:VirtualizedContainerService.HintSize="216,223.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Default="https://tinyurl.com/y8zq8rum" Name="googleDrive_Link" />
                 <Variable x:TypeArguments="x:String" Name="movieString" />
@@ -105,14 +105,14 @@
                   <OutArgument x:TypeArguments="x:String" x:Key="out_MovieString">[movieString]</OutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[movieString]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="330,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[movieString]" />
               <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke FormatVideoDetailString workflow" sap:VirtualizedContainerService.HintSize="330,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="ParseDocuments/FormatVideoDetailString.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="x:String" x:Key="in_MovieListString">[movieString]</InArgument>
                   <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_MovieDatatable">[movieInformationDT]</OutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
-              <Assign sap:VirtualizedContainerService.HintSize="330,62" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign sap:VirtualizedContainerService.HintSize="330,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
                 <Assign.To>
                   <OutArgument x:TypeArguments="sd:DataTable">[out_MovieDatatable]</OutArgument>
                 </Assign.To>
@@ -128,12 +128,12 @@
         <FlowStep x:Name="__ReferenceID2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">192,233.666666666667</av:Point>
-              <av:Size x:Key="ShapeSize">216,52.6666666666667</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">300,286.333333333333 300,345.333333333333</av:PointCollection>
+              <av:Point x:Key="ShapeLocation">192,364</av:Point>
+              <av:Size x:Key="ShapeSize">216,52</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">300,416 300,466</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PullDatatableFromExcel workflow" sap:VirtualizedContainerService.HintSize="216,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="ExcelOperations\PullDatatableFromExcel.xaml">
+          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PullDatatableFromExcel workflow" sap:VirtualizedContainerService.HintSize="216,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="ExcelOperations\PullDatatableFromExcel.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_MovieDataTable">[movieInformationDT]</OutArgument>
             </ui:InvokeWorkflowFile.Arguments>
@@ -147,12 +147,12 @@
             <FlowStep x:Name="__ReferenceID0">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">192,345.333333333333</av:Point>
-                  <av:Size x:Key="ShapeSize">216,69.3333333333333</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">300,414.666666666667 300,445.333333333333</av:PointCollection>
+                  <av:Point x:Key="ShapeLocation">192,466</av:Point>
+                  <av:Size x:Key="ShapeSize">216,68</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">300,534 300,566</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Get URLs From Youtube" sap:VirtualizedContainerService.HintSize="216,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence DisplayName="Get URLs From Youtube" sap:VirtualizedContainerService.HintSize="216,68" sap2010:WorkflowViewState.IdRef="Sequence_7">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -168,12 +168,12 @@
                 <FlowStep x:Name="__ReferenceID1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">192,445.333333333333</av:Point>
-                      <av:Size x:Key="ShapeSize">216,69.3333333333333</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">300,514.666666666667 300,563.666666666667</av:PointCollection>
+                      <av:Point x:Key="ShapeLocation">192,566</av:Point>
+                      <av:Size x:Key="ShapeSize">216,68</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">300,634 300,664 330,664 330,734</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Store Titles And URLS in Excel" sap:VirtualizedContainerService.HintSize="216,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence DisplayName="Store Titles And URLS in Excel" sap:VirtualizedContainerService.HintSize="216,68" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -189,12 +189,12 @@
                     <FlowStep x:Name="__ReferenceID3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">192,563.666666666667</av:Point>
-                          <av:Size x:Key="ShapeSize">216,52.6666666666667</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">300,616.333333333333 300,656.333333333333</av:PointCollection>
+                          <av:Point x:Key="ShapeLocation">222,734</av:Point>
+                          <av:Size x:Key="ShapeSize">216,52</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">330,786 330,816 500,816 500,849</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PullDatatableFromExcel workflow" sap:VirtualizedContainerService.HintSize="216,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="ExcelOperations\PullDatatableFromExcel.xaml">
+                      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PullDatatableFromExcel workflow" sap:VirtualizedContainerService.HintSize="216,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="ExcelOperations\PullDatatableFromExcel.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_MovieDataTable">[movieInformationDT]</OutArgument>
                         </ui:InvokeWorkflowFile.Arguments>
@@ -208,9 +208,9 @@
                         <FlowStep x:Name="__ReferenceID5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:Point x:Key="ShapeLocation">192,656.333333333333</av:Point>
+                              <av:Point x:Key="ShapeLocation">392,849</av:Point>
                               <av:Size x:Key="ShapeSize">216,22</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">300,678.333333333333 300,708.333333333333 310,708.333333333333 310,723.666666666667</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">500,871 500,901 520,901 520,994</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <ui:OutputDataTable DataTable="[movieInformationDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="216,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[dtString]">
@@ -224,12 +224,12 @@
                             <FlowStep x:Name="__ReferenceID6">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <av:Point x:Key="ShapeLocation">202,723.666666666667</av:Point>
-                                  <av:Size x:Key="ShapeSize">216,52.6666666666667</av:Size>
-                                  <av:PointCollection x:Key="ConnectorLocation">310,776.333333333333 310,825.333333333333</av:PointCollection>
+                                  <av:Point x:Key="ShapeLocation">412,994</av:Point>
+                                  <av:Size x:Key="ShapeSize">216,52</av:Size>
+                                  <av:PointCollection x:Key="ConnectorLocation">520,1046 520,1096</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="216,52.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;main workflow: &quot; + dtString]">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="216,52" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;main workflow: &quot; + dtString]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -240,12 +240,12 @@
                                 <FlowStep x:Name="__ReferenceID4">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <av:Point x:Key="ShapeLocation">202,825.333333333333</av:Point>
-                                      <av:Size x:Key="ShapeSize">216,69.3333333333333</av:Size>
-                                      <av:PointCollection x:Key="ConnectorLocation">310,894.666666666667 310,923.666666666667</av:PointCollection>
+                                      <av:Point x:Key="ShapeLocation">412,1096</av:Point>
+                                      <av:Size x:Key="ShapeSize">216,68</av:Size>
+                                      <av:PointCollection x:Key="ConnectorLocation">520,1164 520,1194</av:PointCollection>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Sequence DisplayName="Get Details Per Movie" sap:VirtualizedContainerService.HintSize="216,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                  <Sequence DisplayName="Get Details Per Movie" sap:VirtualizedContainerService.HintSize="216,68" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -262,12 +262,12 @@
                                     <FlowStep x:Name="__ReferenceID7">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <av:Point x:Key="ShapeLocation">202,923.666666666667</av:Point>
-                                          <av:Size x:Key="ShapeSize">216,52.6666666666667</av:Size>
-                                          <av:PointCollection x:Key="ConnectorLocation">310,976.333333333333 310,1025.33333333333</av:PointCollection>
+                                          <av:Point x:Key="ShapeLocation">412,1194</av:Point>
+                                          <av:Size x:Key="ShapeSize">216,52</av:Size>
+                                          <av:PointCollection x:Key="ConnectorLocation">520,1246 520,1296</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke WriteToExcel workflow" sap:VirtualizedContainerService.HintSize="216,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="ExcelOperations\WriteToExcel.xaml">
+                                      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke WriteToExcel workflow" sap:VirtualizedContainerService.HintSize="216,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="ExcelOperations\WriteToExcel.xaml">
                                         <ui:InvokeWorkflowFile.Arguments>
                                           <InArgument x:TypeArguments="sd:DataTable" x:Key="in_MovieDatatable">[movieInformationDT]</InArgument>
                                         </ui:InvokeWorkflowFile.Arguments>
@@ -281,11 +281,11 @@
                                         <FlowStep x:Name="__ReferenceID8">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <av:Point x:Key="ShapeLocation">202,1025.33333333333</av:Point>
-                                              <av:Size x:Key="ShapeSize">216,69.3333333333333</av:Size>
+                                              <av:Point x:Key="ShapeLocation">412,1296</av:Point>
+                                              <av:Size x:Key="ShapeSize">216,68</av:Size>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Sequence DisplayName="Highlight cell in excel" sap:VirtualizedContainerService.HintSize="216,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                          <Sequence DisplayName="Highlight cell in excel" sap:VirtualizedContainerService.HintSize="216,68" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
