@@ -249,7 +249,7 @@
       </ui:ForEachRow.Body>
     </ui:ForEachRow>
     <ui:OutputDataTable DataTable="[detailsDatatable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="596.666666666667,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[outputDTString]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="596.666666666667,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info" Message="[outputDTString]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="596.666666666667,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info" Message="[&quot;Output in Get VIdeo details&quot; + outputDTString]" />
     <Assign sap:VirtualizedContainerService.HintSize="596.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">[out_YoutubeData]</OutArgument>

@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>576,1289.33333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>576,1094</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetMovieNames_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -57,17 +57,17 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetMovieNames" sap:VirtualizedContainerService.HintSize="536,1169.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetMovieNames" sap:VirtualizedContainerService.HintSize="536,974" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Name="movieNameArray" />
-      <Variable x:TypeArguments="sd:DataTable" Name="movieDataDT" />
+      <Variable x:TypeArguments="sd:DataTable" Name="completeDataTable" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="498,1077.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="498,882" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="ui:GenericValue" Name="index" />
         <Variable x:TypeArguments="ui:GenericValue" Name="initialCellValue" />
@@ -77,8 +77,6 @@
         <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="movieNameColumn" />
         <Variable x:TypeArguments="ui:GenericValue[]" Name="movieNameArrays" />
         <Variable x:TypeArguments="x:String" Name="dtString" />
-        <Variable x:TypeArguments="sd:DataTable" Name="completeDataTable" />
-        <Variable x:TypeArguments="x:String" Name="completedDT" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -106,7 +104,7 @@
               <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke YoutubeOps_GetTitlesUrls workflow" sap:VirtualizedContainerService.HintSize="375.333333333333,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="YoutubeOperations\YoutubeOps_GetTitlesUrls.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="x:String" x:Key="in_MovieName">[specificMovie("Movie Name").ToString]</InArgument>
-                  <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_MovieDatatable">[movieDataDT]</OutArgument>
+                  <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_MovieDatatable">[completeDataTable]</InOutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="375.333333333333,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Completed Tasks now assigning&quot;]" />
@@ -114,14 +112,12 @@
           </ActivityAction>
         </ui:ForEachRow.Body>
       </ui:ForEachRow>
-      <ui:OutputDataTable DataTable="[movieDataDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="460,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[completedDT]" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="460,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;This is the DT after the loops: &quot; + completedDT]" />
       <Assign sap:VirtualizedContainerService.HintSize="460,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
         <Assign.To>
           <OutArgument x:TypeArguments="sd:DataTable">[inOut_MovieDatatable]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="sd:DataTable">[movieDataDT]</InArgument>
+          <InArgument x:TypeArguments="sd:DataTable">[completeDataTable]</InArgument>
         </Assign.Value>
       </Assign>
     </Sequence>
