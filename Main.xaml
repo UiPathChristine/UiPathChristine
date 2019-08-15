@@ -81,7 +81,7 @@
           <av:PointCollection x:Key="ConnectorLocation">300,338.666666666666 300,364</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Precondition: Have the link ready for the google drive,&#xA;Must be logged into google&#xD;&#xA;MUST close all IE or Adobe processes&#xD;&#xA;&#xA;Post Condition: Needs to create list that is consumable with the movie names" DisplayName="Process Documents" sap:VirtualizedContainerService.HintSize="216,223.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence sap2010:Annotation.AnnotationText="Precondition: Have the link ready for the google drive,&#xA;Must be logged into google&#xA;MUST close all IE or Adobe processes&#xA;&#xA;Post Condition: Needs to create list that is consumable with the movie names" DisplayName="Process Documents" sap:VirtualizedContainerService.HintSize="216,223.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Default="https://tinyurl.com/y8zq8rum" Name="googleDrive_Link" />
           <Variable x:TypeArguments="s:String[]" Name="movieStringArray1" />
