@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>764,2721.33333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>764,2681.33333333333</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ReadFrom_Adobe_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -56,9 +56,8 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ReadFrom_Adobe" sap:VirtualizedContainerService.HintSize="724,2641.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ReadFrom_Adobe" sap:VirtualizedContainerService.HintSize="724,2601.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="ui:GenericValue" Name="AvlAvview" />
       <Variable x:TypeArguments="ui:GenericValue" Name="scrapedText" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -67,7 +66,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="686,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Reading from adobe...&quot;]" />
-    <Sequence DisplayName="Screen Scraping" sap:VirtualizedContainerService.HintSize="686,2416" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Screen Scraping" sap:VirtualizedContainerService.HintSize="686,2376" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="scg:List(x:String)" Name="newList" />
         <Variable x:TypeArguments="x:Int32" Name="index" />
@@ -77,19 +76,19 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'MovieList Acrobatsd'" sap:VirtualizedContainerService.HintSize="648,2324" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="57111c9b8832f01dcb9d9135f45bb61e" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' /&gt;">
+      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'MovieList Acrobatsd'" sap:VirtualizedContainerService.HintSize="648,2284" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="57111c9b8832f01dcb9d9135f45bb61e" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' /&gt;">
         <ui:WindowScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="618,2178" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence sap:VirtualizedContainerService.HintSize="618,2138" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="580,1940" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="580,1900" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -104,7 +103,7 @@
                     <InArgument x:TypeArguments="x:Int32">0</InArgument>
                   </Assign.Value>
                 </Assign>
-                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="542,1480" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="542,1440" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                   <TryCatch.Try>
                     <Sequence sap:VirtualizedContainerService.HintSize="368,361.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_9">
                       <sap:WorkflowViewStateService.ViewState>
@@ -139,7 +138,7 @@
                     </Sequence>
                   </TryCatch.Try>
                   <TryCatch.Catches>
-                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="512,1310.66666666667" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="512,1270.66666666667" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -150,45 +149,42 @@
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                         </ActivityAction.Argument>
-                        <Sequence sap:VirtualizedContainerService.HintSize="506,1240.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <Sequence sap:VirtualizedContainerService.HintSize="506,1200.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="468,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Trying other OCR method&quot;]" />
-                          <Sequence DisplayName="Screen Scraping" sap:VirtualizedContainerService.HintSize="468,1015.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                            <Sequence.Variables>
-                              <Variable x:TypeArguments="ui:GenericValue" Name="AvlAvview" />
-                            </Sequence.Variables>
+                          <Sequence DisplayName="Screen Scraping" sap:VirtualizedContainerService.HintSize="468,975.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'MovieList Acrobatsd'" sap:VirtualizedContainerService.HintSize="430,923.333333333333" sap2010:WorkflowViewState.IdRef="WindowScope_3" InformativeScreenshot="79dc9897d2bbca36e0bff6a96b8b67b3" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='Movie List 2.PDF - Adobe Acrobat Reader DC' /&gt;">
+                            <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'MovieList Acrobatsd'" sap:VirtualizedContainerService.HintSize="430,883.333333333333" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="93ebf5e3f9de19f238eb8c77b06e8871" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='* - Adobe Acrobat Reader DC' /&gt;">
                               <ui:WindowScope.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,777.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,737.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'AVL_AVView'" sap:VirtualizedContainerService.HintSize="330,208" sap2010:WorkflowViewState.IdRef="GetOCRText_2">
+                                    <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'AVL_AVView'" sap:VirtualizedContainerService.HintSize="330,168" sap2010:WorkflowViewState.IdRef="GetOCRText_3">
                                       <ui:GetOCRText.OCREngine>
                                         <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
                                           <ActivityFunc.Argument>
                                             <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                                           </ActivityFunc.Argument>
-                                          <ui:MicrosoftOCR FilterRegion="{x:Null}" Output="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Microsoft OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="216,22" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_2" Image="[Image]" Language="English (United States)" Profile="Screen" Scale="2" />
+                                          <ui:MicrosoftOCR FilterRegion="{x:Null}" Output="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Microsoft OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="216,22" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_3" Image="[Image]" Language="English (United States)" Profile="Screen" Scale="2" />
                                         </ActivityFunc>
                                       </ui:GetOCRText.OCREngine>
                                       <ui:GetOCRText.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="add9701dcfc1bf44f8e343818bd202b6" Selector="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd aaname='Alert: Empty document' cls='AVL_AVView' title='AVPageView' /&gt;" WaitForReady="INTERACTIVE" />
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="4298f99ce20280fc7e78e978378622b9" Selector="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;" WaitForReady="INTERACTIVE" />
                                       </ui:GetOCRText.Target>
                                       <ui:GetOCRText.Text>
                                         <OutArgument x:TypeArguments="ui:GenericValue">[scrapedText]</OutArgument>
